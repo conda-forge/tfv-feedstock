@@ -43,7 +43,7 @@ test:
     - tests/
     - tfv/
 about:
-  home: https://gitlab.com/TUFLOW/tfv
+  home: https://gitlab.com/tuflow/public/tfv/
   summary: Post processing tools for TUFLOW FV results
   license: MIT
   license_file: LICENSE
