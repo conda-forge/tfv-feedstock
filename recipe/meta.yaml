@@ -1,5 +1,5 @@
 {% set name = "tfv" %}
-{% set version = "1.0.7" %}
+{% set version = "1.0.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tfv-{{ version }}.tar.gz
-  sha256: c0fab95795128d296f43847e65c2e18375439e71f03a2363f6b39a33e2d9f6c9
+  sha256: 59b2c85aba6b78288320fe556ef757c5d0e0791948b715fbcb685d174ca1b10c
 
 build:
   noarch: python
@@ -27,6 +27,7 @@ requirements:
     - dask-core >=2022.01.0
     - scipy >=1.6.0
     - tqdm >=4.50.0
+    - pyproj >=3.4.0
     - wheel
 
 test:
@@ -42,7 +43,7 @@ test:
     - tests/
     - tfv/
 about:
-  home: https://gitlab.com/TUFLOW/tfv
+  home: https://gitlab.com/tuflow/public/tfv/
   summary: Post processing tools for TUFLOW FV results
   license: MIT
   license_file: LICENSE
