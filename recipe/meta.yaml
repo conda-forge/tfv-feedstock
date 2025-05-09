@@ -1,13 +1,13 @@
 {% set name = "tfv" %}
-{% set version = "1.0.10" %}
+{% set version = "1.0.11" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tfv-{{ version }}.tar.gz
-  sha256: 59b2c85aba6b78288320fe556ef757c5d0e0791948b715fbcb685d174ca1b10c
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tfv-{{ version }}.tar.gz
+  sha256: 791d12e9316a090872edc86c4d4018acb7107078a5fe68556644a42cc9df15f1
 
 build:
   noarch: python
