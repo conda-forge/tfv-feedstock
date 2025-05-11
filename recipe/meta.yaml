@@ -1,5 +1,6 @@
 {% set name = "tfv" %}
 {% set version = "1.0.11" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -16,18 +17,24 @@ build:
 
 requirements:
   host:
-    - python  >=3.9
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.9
-    - numpy >=1.19.0
-    - matplotlib-base >3.2.2
-    - netcdf4 >=1.5.3
-    - xarray >=v2022.03.0
-    - dask-core >=2022.01.0
-    - scipy >=1.6.0
-    - tqdm >=4.50.0
-    - pyproj >=3.4.0
+    - python >={{ python_min }}
+    - numpy >=1.24.0
+    - matplotlib-base >=3.7.0
+    - netcdf4 >=1.6.3
+    - xarray >=2023.1.0
+    - dask-core >=2023.1.0
+    - scipy >=1.10.0
+    - tqdm >=4.65.0
+    - pyproj >=3.5.0
+    - geopandas >=0.13.0
+    - shapely >=2.0.0
+    - rioxarray >=0.13.0
+    - ipywidgets >=8.0.0
+    - ipympl >=0.9.0
     - wheel
 
 test:
@@ -39,9 +46,11 @@ test:
   requires:
     - pip
     - pytest
+    - python {{ python_min }}
   source_files:
     - tests/
     - tfv/
+
 about:
   home: https://gitlab.com/tuflow/public/tfv/
   summary: Post processing tools for TUFLOW FV results
