@@ -52,7 +52,7 @@ test:
     - tfv/
 
 about:
-  home: https://gitlab.com/tuflow/public/tfv/
+  home: https://gitlab.com/tuflow-user-group/tuflow-fv/tfv
   summary: Post processing tools for TUFLOW FV results
   license: MIT
   license_file: LICENSE
@@ -61,4 +61,4 @@ extra:
   recipe-maintainers:
     - TUFLOW-Support
     - Mitch3007
-    - Aewaterhouse
+    - jaapvandervelde-tuflow
