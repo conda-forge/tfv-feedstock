@@ -1,5 +1,5 @@
 {% set name = "tfv" %}
-{% set version = "1.0.14" %}
+{% set version = "1.0.15" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tfv-{{ version }}.tar.gz
-  sha256: 3563573d16b51e3ddf40da7dab0ac6965cf3980aa9bed5e7631bd35f048ff8c1
+  sha256: 8c6b978152be896550b6170a4b16b1fa3462a883db0a43d47adf578afa005251
 
 build:
   noarch: python
