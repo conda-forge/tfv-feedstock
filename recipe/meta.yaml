@@ -1,6 +1,6 @@
 {% set name = "tfv" %}
 {% set version = "1.0.15" %}
-{% set python_min = "3.9" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -19,7 +19,8 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - setuptools >=64
+    - wheel
   run:
     - python >={{ python_min }}
     - numpy >=1.24.0
@@ -35,7 +36,6 @@ requirements:
     - rioxarray >=0.13.0
     - ipywidgets >=8.0.0
     - ipympl >=0.9.0
-    - wheel
 
 test:
   imports:
@@ -60,5 +60,5 @@ about:
 extra:
   recipe-maintainers:
     - TUFLOW-Support
-    - Mitch3007
+    - mitchellsmith-tuflow
     - jaapvandervelde-tuflow
