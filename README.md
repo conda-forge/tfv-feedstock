@@ -144,7 +144,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@Mitch3007](https://github.com/Mitch3007/)
 * [@TUFLOW-Support](https://github.com/TUFLOW-Support/)
 * [@jaapvandervelde-tuflow](https://github.com/jaapvandervelde-tuflow/)
+* [@mitchellsmith-tuflow](https://github.com/mitchellsmith-tuflow/)
 
